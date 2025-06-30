@@ -1,0 +1,44 @@
+{
+    "id": "copilot-settings-1",
+    "version": "1.0.0",
+    "customizations": {
+        "vscode": {
+			"mcp": {
+				"inputs": [
+					{
+						"id": "input1",
+						"type": "promptString",
+						"description": "Input 1A",
+						"password": true
+					},
+					{
+						"id": "input2",
+						"type": "promptString",
+						"description": "Input 2A",
+						"password": true
+					}
+				],
+				"servers": {
+					"server1": {
+						"id": "server1",
+						"name": "Server 1A",
+						"config": {
+							"type": "stdio",
+							"command": "server1A",
+							"args": ["${input:input1}"]
+						}
+					},
+					"server2": {
+						"id": "server2",
+						"name": "Server 2A",
+						"config": {
+							"type": "stdio",
+							"command": "server2A",
+							"args": ["${input:input2}"]
+						}
+					}
+				}
+			}
+        }
+    }
+}

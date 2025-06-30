@@ -1,0 +1,31 @@
+{
+	"image": "mcr.microsoft.com/devcontainers/python:3.11",
+	"features": {
+		"./local-features/mcp1": "latest"
+	},
+	"customizations": {
+		"vscode": {
+			"mcp": {
+				"inputs": [
+					{
+						"id": "input1",
+						"type": "promptString",
+						"description": "Input 1B",
+						"password": true
+					}
+				],
+				"servers": {
+					"server1": {
+						"id": "server1",
+						"name": "Server 1B",
+						"config": {
+							"type": "stdio",
+							"command": "server1B",
+							"args": ["${input:input1}"]
+						}
+					}
+				}
+			}
+		}
+	}
+}
