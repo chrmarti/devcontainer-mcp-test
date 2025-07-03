@@ -20,22 +20,14 @@
 				],
 				"servers": {
 					"server1": {
-						"id": "server1",
-						"name": "Server 1A",
-						"config": {
-							"type": "stdio",
-							"command": "server1A",
-							"args": ["${input:input1}"]
-						}
+						"type": "stdio",
+						"command": "server1A",
+						"args": ["${input:input1}"]
 					},
 					"server2": {
-						"id": "server2",
-						"name": "Server 2A",
-						"config": {
-							"type": "stdio",
-							"command": "server2A",
-							"args": ["${input:input2}"]
-						}
+						"type": "stdio",
+						"command": "server2A",
+						"args": ["${input:input2}"]
 					}
 				}
 			}
